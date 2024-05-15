@@ -31,6 +31,7 @@ function BankAccount() {
     } else if (amount > currentBalance) {
       // If the amount is greater than the current balance
       setError("Insufficient funds!"); // Set an error message
+      setMessage(""); // Clear any previous message
     } else {
       setBalance(currentBalance - amount); // Update the balance by subtracting the withdrawn amount
       setError(""); // Clear any previous error
