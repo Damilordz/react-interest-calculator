@@ -55,7 +55,7 @@ function BankAccount() {
   }
 
   return (
-    <div className="card d-flex flex-column justify-content-center p-4">
+    <div className="card d-flex flex-column justify-content-center py-4 px-3">
       {/* Render the BankAccount component */}
       <div className="bank-title">
         <h2>Bank Account</h2>
@@ -68,7 +68,7 @@ function BankAccount() {
       {/* Render the Transaction component and pass the handleDeposit and handleWithdraw functions as props */}
       <Transaction onDeposit={handleDeposit} onWithdraw={handleWithdraw} />
 
-      <div>
+      <div className="charge-btn">
         {/* Button to add 5% interest */}
         <Button variant="success" onClick={() => handleInterest(5)}>
           Add 5% Interest
